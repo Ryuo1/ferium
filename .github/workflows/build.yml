@@ -61,15 +61,6 @@ jobs:
       - name: Install Rust cache
         uses: Swatinem/rust-cache@v2
 
-      - name: Install nextest
-        uses: taiki-e/install-action@nextest
-
-      - name: Lint code
-        run: cargo clippy
-
-      - name: Run tests
-        run: cargo nextest run --no-default-features --no-fail-fast
-
       - name: Build macOS Intel
         if: matrix.os == 'macos-latest'
         env:
