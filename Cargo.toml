@@ -56,7 +56,7 @@ indicatif = "0.17"
 itertools = "0.13"
 octocrab = "0.39"
 fs_extra = "1.3"
-ferinth = "2.11"
+ferinth = { git = "https://github.com/gorilla-devs/ferinth.git", rev = "d3aaa24" }
 colored = "2.1"
 futures = "0.3"
 libium = "1.30"
